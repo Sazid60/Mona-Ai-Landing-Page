@@ -68,7 +68,7 @@ const Navbar = () => {
                         <img className="h-[32px] w-[170px]" src="/fullLogo.png" alt="Logo" />
                     </a>
                 </div>
-                <div className="hidden lg:flex ">
+                <div className="hidden xl:flex ">
                     <ul className="menu menu-horizontal px-1 justify-center items-center">
                         {renderNavLinks(navLinks)}
                         <li><a className='' href="">Login</a></li>
@@ -77,8 +77,8 @@ const Navbar = () => {
                 </div>
                 <div className="navbar-end lg:hidden">
                     <div className="dropdown">
-                        <div tabIndex={0} role="button" className="btn btn-ghost" onClick={toggleSideNav}>
-                            <BsListNested className="h-5 w-5" />
+                        <div tabIndex={0} role="button" className="btn btn-ghost p-2" onClick={toggleSideNav}>
+                            <BsListNested  />
                         </div>
                     </div>
                 </div>
