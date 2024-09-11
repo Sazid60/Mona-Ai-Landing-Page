@@ -18,7 +18,7 @@ const TranslationSection = () => {
     <div className="text-white xl:py-12 xl:px-6">
       <div className="max-w-7xl mx-auto">
         
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
+        <h2 className="text-2xl lg:text-4xl  font-bold text-center mb-12">
           YouTube Translation: Two Tiers to Suit Your Needs
         </h2>
 
