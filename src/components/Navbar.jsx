@@ -62,44 +62,42 @@ const Navbar = () => {
 
     return (
         <>
-            <div className="navbar bg-transparent backdrop-blur-lg flex justify-center gap-5 items-center">
-                <div className="">
-                    <a className="">
+            <div className="navbar fixed top-0 left-0 w-full bg-[#131B2D]/90 backdrop-blur-lg flex justify-center gap-5 items-center z-50">
+                <div>
+                    <a>
                         <img className="h-[32px] w-[170px]" src="/fullLogo.png" alt="Logo" />
                     </a>
                 </div>
-                <div className="hidden xl:flex ">
+                <div className="hidden xl:flex">
                     <ul className="menu menu-horizontal px-1 justify-center items-center">
                         {renderNavLinks(navLinks)}
-                        <li><a className='' href="">Login</a></li>
+                        <li><a href="">Login</a></li>
                         <li><a className='border border-[#10AAAE]' href="">Sign Up</a></li>
                     </ul>
                 </div>
                 <div className="navbar-end lg:hidden">
                     <div className="dropdown">
                         <div tabIndex={0} role="button" className="btn btn-ghost p-2" onClick={toggleSideNav}>
-                            <BsListNested  />
+                            <BsListNested />
                         </div>
                     </div>
                 </div>
             </div>
 
-            {/* Side Nav */}
-            <div className={`fixed top-0 left-0 h-full w-full transform ${isSideNavOpen ? 'translate-x-0' : '-translate-x-full'} transition-transform duration-300 ease-in-out`} style={{ backgroundColor: '#131B2D' }}>
+            <div className={`fixed top-0 left-0 h-full w-full bg-[#131B2D] z-50 transform transition-transform duration-300 ease-in-out ${isSideNavOpen ? 'translate-x-0' : '-translate-x-full'}`}>
                 <div className="p-4">
                     <div className='flex justify-between'>
                         <a className="">
                             <img className="h-[32px] w-[170px]" src="/fullLogo.png" alt="Logo" />
                         </a>
-                        <button className="text-white" onClick={toggleSideNav}><IoMdClose />
-                        </button>
+                        <button className="text-white" onClick={toggleSideNav}><IoMdClose /></button>
                     </div>
                     <ul className="mt-8 text-white space-y-4">
                         {renderNavLinks(navLinks)}
                     </ul>
                     <div className='flex flex-col justify-center items-center mt-8 space-y-4'>
-                        <button className='btn w-full bg-transparent border-0 text-white' href="">Login</button>
-                        <button className='border border-[#10AAAE] btn bg-transparent text-white w-full' href="">Sign Up</button>
+                        <button className='btn w-full bg-transparent border-0 text-white'>Login</button>
+                        <button className='border border-[#10AAAE] btn bg-transparent text-white w-full'>Sign Up</button>
                     </div>
                 </div>
             </div>
