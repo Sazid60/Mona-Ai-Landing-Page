@@ -62,7 +62,7 @@ const Navbar = () => {
 
     return (
         <>
-            <div className="navbar fixed top-0 left-0 w-full bg-[#131B2D]/90 backdrop-blur-lg flex justify-center gap-5 items-center z-50">
+            <div className="navbar fixed top-0 left-0 w-full bg-[#131B2D]/90 backdrop-blur-lg flex justify-between xl:justify-center gap-5 items-center z-50">
                 <div>
                     <a>
                         <img className="h-[32px] w-[170px]" src="/fullLogo.png" alt="Logo" />
@@ -75,7 +75,7 @@ const Navbar = () => {
                         <li><a className='border border-[#10AAAE]' href="">Sign Up</a></li>
                     </ul>
                 </div>
-                <div className="navbar-end lg:hidden">
+                <div className="navbar-end xl:hidden">
                     <div className="dropdown">
                         <div tabIndex={0} role="button" className="btn btn-ghost p-2" onClick={toggleSideNav}>
                             <BsListNested />
