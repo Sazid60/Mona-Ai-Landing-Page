@@ -1,8 +1,9 @@
-import { Tab, TabList, TabPanel, Tabs } from "react-tabs";
+
 import Banner from "../components/Banner";
 import 'react-tabs/style/react-tabs.css';
 import TabComponent from "../components/TabComponent";
 import StepSection from "../components/StepSection";
+import TranslationSection from "../components/Translation";
 
 
 const Home = () => {
@@ -13,6 +14,7 @@ const Home = () => {
             <Banner />
             <TabComponent/>
             <StepSection/>
+            <TranslationSection/>
         </div>
     );
 };

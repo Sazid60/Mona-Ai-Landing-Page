@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { FaUser, FaCogs, FaPlay, FaShareAlt } from 'react-icons/fa';
 
 const StepsSection = () => {
@@ -53,7 +53,7 @@ const StepsSection = () => {
                     {steps.map((step, index) => (
                         <div key={index} className="flex flex-row-reverse xl:flex-col items-center gap-2 mb-6 xl:mb-0">
                             <h1
-                                className={`text-center text-xl lg:text-2xl xl:text-5xl font-bold md:text-left mb-10 xl:mr-4 ${index > 0 ? 'md:mt-8' : ''}`}
+                                className={`text-center text-xl lg:text-2xl xl:text-5xl font-bold md:text-left mb-10 xl:mr-4 text-gray-700 ${index > 0 ? 'md:mt-8' : ''}`}
                                 style={isXlScreen ? { marginTop: `${index * 2}rem` } : {}}
                             >
                                 {step.number}
