@@ -15,7 +15,7 @@ function TabComponent() {
     const [selectedIndex, setSelectedIndex] = useState(0);
 
     return (
-        <div className="w-full max-w-5xl mx-auto mt-10  lg:px-8">
+        <div className="w-full max-w-5xl mx-auto mt-6 xl:mt-10  lg:px-8">
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-6 gap-4 mb-4">
                 {tabData.map((tab, index) => (
                     <button
@@ -32,7 +32,7 @@ function TabComponent() {
             <div className="p-6 text-white flex flex-col md:flex-row md:justify-between items-start">
                 <div className="flex flex-col gap-4 w-full">
                     <h1 className="text-sm lg:text-xl xl:text-2xl font-semibold">{tabData[selectedIndex].contentTitle}</h1>
-                    <p className="text-xs lg:text-lg xl:text-xl font-light">{tabData[selectedIndex].content}</p>
+                    <p className="text-xs lg:text-sm xl:text-lg font-light text-gray-500">{tabData[selectedIndex].content}</p>
                     {tabData[selectedIndex].additionalInfo.map((info, idx) => (
                         <div key={idx} className="flex items-center gap-3 text-xs lg:text-xl font-light">
                             <span className="text-4xl text-[#2C9F89]"><WiStars /></span>
